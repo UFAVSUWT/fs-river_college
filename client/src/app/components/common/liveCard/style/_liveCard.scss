@@ -1,0 +1,50 @@
+@import "../../../../style/variables";
+.liveCard{
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.liveCard__title{
+    position: absolute;
+    font-weight: 700;
+    bottom: 0.2em;
+    padding-left: 10px;
+    color: $WHITE_FONT_COLOR;
+    
+}
+.liveCard__title-off{
+    position: absolute;
+    font-weight: 700;
+    bottom: 0.2em;
+    padding-left: 10px;
+    color: $DISABLED_FONT_COLOR;
+    
+}
+
+.liveCardOne{
+    grid-area: liveCardOne;
+   
+}
+.liveCardTwo{
+    grid-area: liveCardTwo;
+}
+.liveCardThree{
+    grid-area: liveCardThree;
+}
+.liveCardFour{
+    grid-area: liveCardFour;
+}
+.liveCardFive{
+    grid-area: liveCardFive;
+}
+.liveCardSix{
+    grid-area: liveCardSix;
+}
+.liveCardSeven{
+    grid-area: liveCardSeven;
+} 
+.liveCardEight{
+    grid-area: liveCardEight;
+}

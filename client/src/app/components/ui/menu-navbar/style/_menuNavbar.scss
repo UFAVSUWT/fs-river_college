@@ -1,0 +1,95 @@
+@import "../../../../style/variables";
+.header__navbar{
+    width: 1270px;
+    position: relative;
+    &-list{ 
+        ul{
+        width: 100%;
+        display: flex;
+        padding: 0;
+        margin: 0;
+        
+        li{
+            text-align: center;
+            line-height: 22px;
+            height: 60px;
+            padding: 5px;
+            cursor: pointer;
+        }
+    
+        li:nth-child(1){
+            width: 30%;
+            height: 100%;
+            font-size: 0.8em;
+        }
+        li:nth-child(2){
+            width: 8%;
+            vertical-align: middle;
+            &:hover{
+                background-color: white;
+                color: $MAIN_COLOR;
+            }
+        }
+        li:nth-child(2):before {
+            content: "";
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+       }
+        li:nth-child(3){
+            width: 13%;
+            &:hover{
+                background-color: white;
+                color: $MAIN_COLOR;
+            }
+        }
+        li:nth-child(3):before {
+            content: "";
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+       }
+        li:nth-child(4){
+            width: 12%;
+            &:hover{
+                background-color: white;
+                color: $MAIN_COLOR;
+            }
+        }
+        li:nth-child(4):before {
+            content: "";
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+       }
+        li:nth-child(5){
+            width: 15%;
+            &:hover{
+                background-color: white;
+                color: $MAIN_COLOR;
+            }
+        }
+        li:nth-child(6){
+            width: 13%;
+            &:hover{
+                background-color: white;
+                color: $MAIN_COLOR;
+            }
+        }
+        li:nth-child(7){
+            width: 10%;
+            &:hover{
+                background-color: white;
+                color: $MAIN_COLOR;
+            }
+        }
+        li:nth-child(7):before {
+            content: "";
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+       }
+    }
+}
+}
+

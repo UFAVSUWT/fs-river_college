@@ -1,0 +1,42 @@
+@import "../../../../../../style/variables";
+
+.reception__navbar {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  a {
+    margin: 10px;
+    text-decoration: none;
+  }
+  a:hover {
+    color: $LINK_COLOR;
+  }
+}
+
+.passingScores-table {
+  margin: 0 auto;
+  td,
+  th {
+    padding: 15px;
+  }
+
+  tbody tr:nth-child(odd) {
+    background: #fff;
+  }
+
+  /* Четные строки */
+  tbody tr:nth-child(even) {
+    background: #f7f7f7;
+  }
+  a {
+    /*  font-size: 0.8rem; */
+    color: $MAIN_COLOR;
+    border-bottom: solid 1px $MAIN_COLOR;
+    font-weight: 500;
+    &:hover {
+      color: $MAIN_COLOR;
+      border-bottom: none;
+      text-decoration: none;
+    }
+  }
+}

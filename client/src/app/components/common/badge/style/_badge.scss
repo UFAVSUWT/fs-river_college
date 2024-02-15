@@ -1,0 +1,43 @@
+@import "../../../../style/variables";
+.badge{
+    padding: 5px 10px;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: $MAIN_COLOR; 
+    font-size: 0.75rem;
+    font-weight: 400;
+
+}
+.badge-white{
+    padding: 5px 10px;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: $BACK_WHITE; 
+    color: $DISABLED_FONT_COLOR;
+    border: solid 1px $DISABLED_FONT_COLOR;
+    font-size: 0.75rem;
+    font-weight: 400;
+
+}
+.badge-black{
+    padding: 5px 10px;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: $BACK_BLACK; 
+    color: $WHITE_FONT_COLOR;
+    border: solid 1px $WHITE_FONT_COLOR;
+    font-size: 0.75rem;
+    font-weight: 400;
+
+}
+.badge-contrast{
+    padding: 5px 10px;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: $BACK_CONTRAST; 
+    color: $FONT_CONTRAST;
+    border: solid 1px $FONT_CONTRAST; 
+    font-size: 0.75rem;
+    font-weight: 400;
+
+}

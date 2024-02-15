@@ -1,0 +1,87 @@
+@import "../../../../../style/variables";
+
+.struct-title{
+    font-weight: 600;
+    color: $MAIN_COLOR;
+}
+@media screen and (max-width:958px) {
+    .struct__scrollTable{
+        padding: 0.5em;
+        border-top-left-radius: 0.5em;
+        border-left: solid 1px rgba(12, 29, 44, 0.139);
+        border-top: solid 1px rgba(12, 29, 44, 0.139);
+        width: 800px;
+        overflow-x: scroll;
+        margin: 0 auto;
+
+        table{
+            width: 958px;
+            td{
+                font-size: 0.8rem ; 
+              /*  width: 220px; */
+            }
+        }
+     }
+}
+@media screen and (max-width:841px) {
+    .struct__scrollTable{
+        width: 700px;
+        table{
+            width: 841px;
+            td{
+                font-size: 0.8rem ; 
+            }
+        }
+     }
+}
+@media screen and (max-width:741px) {
+    .struct__scrollTable{
+        width: 600px;
+        table{
+            width: 741px;
+            td{
+                font-size: 0.7rem ; 
+            }
+        }
+     }
+}
+@media screen and (max-width:641px) {
+    .struct__scrollTable{
+        width: 500px;
+        table{
+            width: 641px;
+        }
+     }
+}
+@media screen and (max-width:541px) {
+    .struct__scrollTable{
+        width: 400px;
+        table{
+            width: 541px;
+        }
+     }
+}
+@media screen and (max-width:441px) {
+    .struct__scrollTable{
+        width: 300px;
+        table{
+            width: 441px;
+        }
+     }
+}
+@media screen and (max-width:341px) {
+    .struct__scrollTable{
+        width: 250px;
+        table{
+            width: 341px;
+        }
+     }
+}
+@media screen and (max-width:300px) {
+    .struct__scrollTable{
+        width: 240px;
+        table{
+            width: 300px;
+        }
+     }
+}

@@ -1,0 +1,151 @@
+// Colors
+$MENU_COLOR:#123655;
+$MAIN_COLOR:#0C1C2B;
+$FONT_COLOR:#ffffff;
+$BACK_BLACK:#000;
+$BACK_WHITE:#fff;
+$BACK_CONTRAST: #9dd1ff;
+$FONT_CONTRAST:#195183;
+$DISABLED_FONT_COLOR:#000;
+$WHITE_FONT_COLOR:#fff;
+$RED_COLOR:#C80000;
+$TIMETABLE_COLOR:#C80000;
+$BACK_TIMETABLE_COLOR:#fff;
+$BACK_NEWSCARD:rgb(1, 78, 193);
+$BACK_NEWSCARD_ORANGE:#fd5a3a;
+$BLUE_FONT_COLOR:#0C1C2A;
+$BACK_MENU_COLOR:#fff;
+$LINK_COLOR:rgba(12, 29, 44, 0.72);
+$ACTIV_LINK_COLOR:#0c1c2a;
+$BLUE:#F4FBFF;
+$DISABLED:#CCC;
+
+
+$SVEDEN_BORDER-COLOR:#ededed;
+$BACK_BTN_SHOW:rgb(158, 181, 217);
+
+
+
+:root[data-fontSize="normal"] {
+    --font-size: 1rem;
+  }
+  
+  :root[data-fontSize="medium"] {
+    --font-size: 1.5rem;
+  }
+//temes
+.main {
+    background-color: $MAIN_COLOR;
+    color: $WHITE_FONT_COLOR;
+}
+.white {
+    background-color: $BACK_WHITE;
+    color: $DISABLED_FONT_COLOR;
+}
+.white-radius {
+    border: solid 1px $DISABLED_FONT_COLOR;
+}
+.black {
+    background-color: $BACK_BLACK;
+    color: $WHITE_FONT_COLOR;
+}
+.black-radius {
+    border: solid 1px $WHITE_FONT_COLOR;
+}
+.contrast {
+    background-color: $BACK_CONTRAST;
+    color: $FONT_CONTRAST;
+}
+.contrast-radius {
+    border: solid 1px $FONT_CONTRAST;
+}
+// Голубой фон
+.background-blue{
+    background-color: $BLUE;
+}
+
+// Для заголовков
+.title {
+    font-weight: 600;
+    color: $MAIN_COLOR;
+    margin: 15px 0px 30px 0px;
+}
+.title-white {
+    font-weight: 600;
+    color: $DISABLED_FONT_COLOR;
+    margin: 15px 0px 30px 0px;
+}
+.title-black {
+    font-weight: 600;
+    color: $WHITE_FONT_COLOR;
+    margin: 15px 0px 30px 0px;
+}
+.title-contrast {
+    font-weight: 600;
+    color: $FONT_CONTRAST;
+    margin: 15px 0px 30px 0px;
+}
+
+//flexbox
+
+.flex {
+    display: flex;
+}
+.jcc{
+    justify-content: center;
+}
+.jcs{
+    justify-content: space-between;
+}
+.w1{
+    width: 100%;
+    align-items: center;
+}
+// tables
+.td__max{
+    max-width: 450px;
+}
+.scroll-table{
+    padding: 0.5em;
+    border-top-left-radius: 0.5em;
+    border-left: solid 1px rgba(12, 29, 44, 0.139);
+    border-top: solid 1px rgba(12, 29, 44, 0.139);
+    max-width: 900px;
+    max-height: 350px;
+    overflow: scroll;
+}
+@include laptop{
+    .scroll-table{
+        padding: 0.5em 0;
+    }
+}
+// links
+.active__link{
+    text-decoration: none;
+    color: $ACTIV_LINK_COLOR;
+    border-bottom: solid 1px $ACTIV_LINK_COLOR;
+    &:hover {
+        color: $ACTIV_LINK_COLOR;
+        font-weight: 500;
+    }
+}
+//hidden
+.hidden {
+    display: none;
+}
+.imageFilter {
+    filter: grayscale(100%);
+}
+.imageFloatLeft {
+    float: left;
+}
+.margin-tb1{
+    margin: 1em 0;
+}
+.justify-end{
+    text-align: right !important;
+}
+
+.mb-1em{
+    margin-bottom: 1em;
+}

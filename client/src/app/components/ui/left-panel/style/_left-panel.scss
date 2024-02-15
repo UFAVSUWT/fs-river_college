@@ -1,0 +1,518 @@
+/* @import "../../../../style/variables";
+.leftPanel__wrapper {
+  position: fixed;
+  background-color: $MAIN_COLOR;
+  left: 0;
+  width: 4%;
+  height: 100vh;
+  z-index: 100;
+  a {
+    color: $MAIN_COLOR;
+  }
+  &-moove {
+    position: absolute;
+    left: 100%;
+    max-width: 0px;
+    transition: max-width 0.5s ease-in;
+    overflow: hidden;
+    background-color: white;
+    -webkit-box-shadow: 4px 0px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 0px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 0px 8px 0px rgba(34, 60, 80, 0.2);
+    height: 100vh;
+    z-index: 100;
+
+    &-links {
+      margin-top: 5px;
+      height: 30%;
+      .links__container {
+        min-width: 420px;
+        height: 21%;
+        display: flex;
+        align-items: center;
+        border-bottom: solid 1px $MAIN_COLOR;
+        margin-left: 10px;
+        cursor: pointer;
+        a {
+          color: $MAIN_COLOR;
+        }
+      }
+      .links__container-active {
+        border-bottom: solid 1px $RED_COLOR;
+      }
+    }
+    &-top {
+      height: 70%;
+      div {
+        height: 10vh;
+        text-align: center;
+        color: $MAIN_COLOR;
+        padding: 10px;
+        width: 400px;
+        font-size: 30px;
+        margin-left: 10px;
+
+        overflow: hidden;
+
+        border-bottom: solid 1px #8090be77;
+      }
+    }
+  }
+  &-static {
+    bottom: 0;
+    height: 100%;
+    &-top {
+      height: 70%;
+      div {
+        height: 10vh;
+        padding: 10%;
+        opacity: 1;
+        border-bottom: solid 1px #8090bec3;
+      }
+    }
+    &-icons {
+      height: 30%;
+    }
+    .icon__container {
+      display: flex;
+      padding: 3px;
+      justify-content: center;
+      margin: 0 auto;
+      height: 21%;
+      margin-bottom: 2%;
+      margin-top: 2%;
+      :first-child {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.leftPanel__wrapper-white {
+  background-color: white;
+  a {
+    color: black;
+  }
+  .leftPanel__wrapper-moove {
+    background-color: white;
+    &-links {
+      .links__container {
+        border-bottom: solid 1px black;
+        cursor: pointer;
+        color: black;
+        a {
+          color: black;
+        }
+      }
+      .links__container-active {
+        border-bottom: solid 1px $RED_COLOR;
+      }
+    }
+    &-top {
+      div {
+        color: black;
+      }
+    }
+  }
+}
+
+.leftPanel__wrapper-black {
+  background-color: black;
+  a {
+    color: white;
+  }
+  .leftPanel__wrapper-moove {
+    background-color: black;
+    &-links {
+      .links__container {
+        border-bottom: solid 1px white;
+        cursor: pointer;
+        color: white;
+        a {
+          color: white;
+        }
+      }
+      .links__container-active {
+        border-bottom: solid 1px $RED_COLOR;
+      }
+    }
+    &-top {
+      div {
+        color: white;
+      }
+    }
+  }
+}
+
+.leftPanel__wrapper-contrast {
+  background-color: $BACK_CONTRAST;
+  a {
+    color: $FONT_CONTRAST;
+  }
+  .leftPanel__wrapper-moove {
+    background-color: $BACK_CONTRAST;
+    &-links {
+      .links__container {
+        border-bottom: solid 1px $FONT_CONTRAST;
+        cursor: pointer;
+        color: $FONT_CONTRAST;
+        a {
+          color: $FONT_CONTRAST;
+        }
+      }
+      .links__container-active {
+        border-bottom: solid 1px $RED_COLOR;
+      }
+    }
+    &-top {
+      div {
+        color: $FONT_CONTRAST;
+      }
+    }
+  }
+}
+
+.isShow {
+  max-width: 400px;
+  transition: max-width 0.5s ease-in;
+}
+.leftPanel__wrapper-moove-disabled {
+  display: none;
+  width: 100%;
+  transition: max-width 0.5s ease-in;
+  overflow: hidden;
+  background-color: $DISABLED;
+  -webkit-box-shadow: 4px 0px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 0px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 0px 8px 0px rgba(34, 60, 80, 0.2);
+  height: 100vh;
+  z-index: 101;
+  &-back {
+    width: 384px;
+    margin: 5% 2%;
+    display: flex;
+    justify-content: flex-end;
+    div {
+      border: solid 2px #000;
+      width: max-content;
+      padding: 0.3em;
+      font-size: 22px;
+      cursor: pointer;
+    }
+  }
+}
+.leftPanel__wrapper-moove-login {
+  display: none;
+  width: 100%;
+  overflow: hidden;
+  background-color: white;
+  height: 100vh;
+  z-index: 101;
+  &-form {
+    height: 40%;
+    padding: 3%;
+    h1 {
+      text-align: center;
+    }
+    .login_form-btnLogin {
+      width: 100%;
+      border-radius: 2px;
+    }
+    .login_form-inputWrapper-input {
+      border-bottom: solid 1px $MAIN_COLOR;
+      color: $MAIN_COLOR;
+    }
+    .login_form-inputWrapper-input::placeholder {
+      color: $MAIN_COLOR;
+      font-size: 16px;
+    }
+  }
+  &-top {
+    height: 60%;
+    div {
+      height: 10vh;
+      text-align: center;
+      color: $MAIN_COLOR;
+      padding: 10px;
+      width: 400px;
+      font-size: 30px;
+      margin-left: 10px;
+      overflow: hidden;
+      border-bottom: solid 1px #8090be77;
+    }
+  }
+}
+
+.leftPanel__wrapper-moove-disabled-show {
+  display: block;
+}
+.leftPanel__wrapper-moove-login-show {
+  display: block;
+}
+@media screen and (max-width: 1270) {
+  .leftPanel__wrapper {
+    position: static;
+    width: 0;
+    display: none;
+  }
+}
+ */
+
+@import "../../../../style/variables";
+.leftPanel__wrapper {
+  position: fixed;
+  background-color: $MAIN_COLOR;
+  left: 0;
+  width: 4%;
+  height: 100vh;
+  z-index: 100;
+  a {
+    color: $MAIN_COLOR;
+  }
+  &-moove {
+    position: absolute;
+    left: 100%;
+    max-width: 0px;
+    transition: max-width 0.5s ease-in;
+    overflow: hidden;
+    background-color: white;
+    -webkit-box-shadow: 4px 0px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 0px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 0px 8px 0px rgba(34, 60, 80, 0.2);
+    height: 100vh;
+    z-index: 100;
+
+    &-links {
+      margin-top: 5px;
+      height: 30%;
+      .links__container {
+        min-width: 420px;
+        height: 21%;
+        display: flex;
+        align-items: center;
+        border-bottom: solid 1px $MAIN_COLOR;
+        margin-left: 10px;
+        cursor: pointer;
+        a {
+          color: $MAIN_COLOR;
+        }
+      }
+      .links__container-active {
+        border-bottom: solid 1px $RED_COLOR;
+      }
+    }
+    &-top {
+      height: 70%;
+      div {
+        height: 10vh;
+        text-align: center;
+        color: $MAIN_COLOR;
+        padding: 10px;
+        width: 400px;
+        font-size: 30px;
+        margin-left: 10px;
+
+        overflow: hidden;
+
+        border-bottom: solid 1px #8090be77;
+      }
+    }
+  }
+  &-static {
+    bottom: 0;
+    height: 100%;
+    &-top {
+      height: 70%;
+      div {
+        height: 10vh;
+        padding: 10%;
+        opacity: 1;
+        border-bottom: solid 1px #8090bec3;
+      }
+    }
+    &-icons {
+      height: 30%;
+    }
+    .icon__container {
+      display: flex;
+      padding: 3px;
+      justify-content: center;
+      margin: 0 auto;
+      height: 21%;
+      margin-bottom: 2%;
+      margin-top: 2%;
+      :first-child {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.leftPanel__wrapper-white {
+  background-color: white;
+  a {
+    color: black;
+  }
+  .leftPanel__wrapper-moove {
+    background-color: white;
+    &-links {
+      .links__container {
+        border-bottom: solid 1px black;
+        cursor: pointer;
+        color: black;
+        a {
+          color: black;
+        }
+      }
+      .links__container-active {
+        border-bottom: solid 1px $RED_COLOR;
+      }
+    }
+    &-top {
+      div {
+        color: black;
+      }
+    }
+  }
+}
+
+.leftPanel__wrapper-black {
+  background-color: black;
+  a {
+    color: white;
+  }
+  .leftPanel__wrapper-moove {
+    background-color: black;
+    &-links {
+      .links__container {
+        border-bottom: solid 1px white;
+        cursor: pointer;
+        color: white;
+        a {
+          color: white;
+        }
+      }
+      .links__container-active {
+        border-bottom: solid 1px $RED_COLOR;
+      }
+    }
+    &-top {
+      div {
+        color: white;
+      }
+    }
+  }
+}
+
+.leftPanel__wrapper-contrast {
+  background-color: $BACK_CONTRAST;
+  a {
+    color: $FONT_CONTRAST;
+  }
+  .leftPanel__wrapper-moove {
+    background-color: $BACK_CONTRAST;
+    &-links {
+      .links__container {
+        border-bottom: solid 1px $FONT_CONTRAST;
+        cursor: pointer;
+        color: $FONT_CONTRAST;
+        a {
+          color: $FONT_CONTRAST;
+        }
+      }
+      .links__container-active {
+        border-bottom: solid 1px $RED_COLOR;
+      }
+    }
+    &-top {
+      div {
+        color: $FONT_CONTRAST;
+      }
+    }
+  }
+}
+
+.isShow {
+  max-width: 400px;
+  transition: max-width 0.5s ease-in;
+}
+.leftPanel__wrapper-moove-disabled {
+  display: none;
+  width: 100%;
+  transition: max-width 0.5s ease-in;
+  overflow: hidden;
+  background-color: $DISABLED;
+  -webkit-box-shadow: 4px 0px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 0px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 0px 8px 0px rgba(34, 60, 80, 0.2);
+  height: 100vh;
+  z-index: 101;
+  &-back {
+    width: 384px;
+    margin: 5% 2%;
+    display: flex;
+    justify-content: flex-end;
+    div {
+      border: solid 2px #000;
+      width: max-content;
+      padding: 0.3em;
+      font-size: 22px;
+      cursor: pointer;
+    }
+  }
+}
+.leftPanel__wrapper-moove-login {
+  display: none;
+  width: 100%;
+  overflow: hidden;
+  background-color: white;
+  height: 100vh;
+  z-index: 101;
+  &-form {
+    height: 40%;
+    padding: 3%;
+    h1 {
+      text-align: center;
+    }
+    .login_form-btnLogin {
+      width: 100%;
+      border-radius: 2px;
+    }
+    .login_form-inputWrapper-input {
+      border-bottom: solid 1px $MAIN_COLOR;
+      color: $MAIN_COLOR;
+    }
+    .login_form-inputWrapper-input::placeholder {
+      color: $MAIN_COLOR;
+      font-size: 16px;
+    }
+  }
+  &-top {
+    height: 60%;
+    div {
+      height: 10vh;
+      text-align: center;
+      color: $MAIN_COLOR;
+      padding: 10px;
+      width: 400px;
+      font-size: 30px;
+      margin-left: 10px;
+      overflow: hidden;
+      border-bottom: solid 1px #8090be77;
+    }
+  }
+}
+
+.leftPanel__wrapper-moove-disabled-show {
+  display: block;
+}
+.leftPanel__wrapper-moove-login-show {
+  display: block;
+}
+@media screen and (max-width: 1270) {
+  .leftPanel__wrapper {
+    position: static;
+    width: 0;
+    display: none;
+  }
+}

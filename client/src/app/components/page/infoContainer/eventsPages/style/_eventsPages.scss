@@ -1,0 +1,172 @@
+@import "../../../../../style/variables";
+.eventsPages{
+    background-color: $BLUE;
+    padding: 40px 0px 40px 0px;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 300px);
+    grid-template-areas: 
+    "firstCard   secondCard   thirdCard   fourthCard";
+}
+.eventsPages-white{
+    background-color: $BACK_WHITE;
+    color: $DISABLED_FONT_COLOR;
+    padding: 40px 0px 40px 0px;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 300px);
+    grid-template-areas: 
+    "firstCard   secondCard   thirdCard   fourthCard";
+}
+.eventsPages-black{
+    background-color: $BACK_BLACK;
+    color: $WHITE_FONT_COLOR;
+    padding: 40px 0px 40px 0px;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 300px);
+    grid-template-areas: 
+    "firstCard   secondCard   thirdCard   fourthCard";
+}
+.eventsPages-contrast{
+    background-color: $BACK_CONTRAST;
+    color: $FONT_CONTRAST;
+    padding: 40px 0px 40px 0px;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 300px);
+    grid-template-areas: 
+    "firstCard   secondCard   thirdCard   fourthCard";
+}
+.eventsBtn__container{
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width:1190px) {
+    .eventsPages{
+        gap:20px;
+    }
+    .eventsPages-white{
+        gap:20px;
+    }
+    .eventsPages-black{
+        gap:20px;
+    }
+    .eventsPages-contrast{
+        gap:20px;
+    }
+}
+@media screen and (max-width:1082px) {
+    .eventsPages{
+        gap:40px;
+        justify-content: center;
+        grid-template-columns: repeat(2, 300px);
+        grid-template-rows: repeat(2, 300px);
+        grid-template-areas: 
+        "firstCard   secondCard"
+        "thirdCard   fourthCard";
+    }
+    .eventsPages-white{
+        gap:40px;
+        justify-content: center;
+        grid-template-columns: repeat(2, 300px);
+        grid-template-rows: repeat(2, 300px);
+        grid-template-areas: 
+        "firstCard   secondCard"
+        "thirdCard   fourthCard";
+    }
+    .eventsPages-black{
+        gap:40px;
+        justify-content: center;
+        grid-template-columns: repeat(2, 300px);
+        grid-template-rows: repeat(2, 300px);
+        grid-template-areas: 
+        "firstCard   secondCard"
+        "thirdCard   fourthCard";
+    }
+    .eventsPages-contrast{
+        gap:40px;
+        justify-content: center;
+        grid-template-columns: repeat(2, 300px);
+        grid-template-rows: repeat(2, 300px);
+        grid-template-areas: 
+        "firstCard   secondCard"
+        "thirdCard   fourthCard";
+    }
+}
+@media screen and (max-width:708px) {
+    .eventsPages{
+        gap:20px;
+    }
+    .eventsPages-white{
+        gap:20px;
+    }
+    .eventsPages-black{
+        gap:20px;
+    }
+    .eventsPages-contrast{
+        gap:20px;
+    }
+}
+@media screen and (max-width:630px) {
+    .eventsPages{
+        gap:20px;
+        grid-template-columns: repeat(1, 300px);
+        grid-template-rows: repeat(4, 300px);
+        grid-template-areas: 
+        "firstCard"
+        "secondCard"
+        "thirdCard"
+        "fourthCard";
+    }
+    .eventsPages-white{
+        gap:20px;
+        grid-template-columns: repeat(1, 300px);
+        grid-template-rows: repeat(4, 300px);
+        grid-template-areas: 
+        "firstCard"
+        "secondCard"
+        "thirdCard"
+        "fourthCard";
+    }
+    .eventsPages-black{
+        gap:20px;
+        grid-template-columns: repeat(1, 300px);
+        grid-template-rows: repeat(4, 300px);
+        grid-template-areas: 
+        "firstCard"
+        "secondCard"
+        "thirdCard"
+        "fourthCard";
+    }
+    .eventsPages-contrast{
+        gap:20px;
+        grid-template-columns: repeat(1, 300px);
+        grid-template-rows: repeat(4, 300px);
+        grid-template-areas: 
+        "firstCard"
+        "secondCard"
+        "thirdCard"
+        "fourthCard";
+    }
+}
+
+@media screen and (max-width:330px) {
+    .eventsPages{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .eventsPages-white{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .eventsPages-black{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .eventsPages-contrast{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}

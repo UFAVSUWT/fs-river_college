@@ -1,0 +1,113 @@
+@import "../../../../style/variables";
+.breadCrumbs__container {
+  padding: 5px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 10px;
+  color: $LINK_COLOR;
+  a {
+    margin-top: 4px;
+    max-width: max-content;
+    color: $ACTIV_LINK_COLOR;
+    margin-left: 4px;
+  }
+  .breadCrumbs__container-last {
+    margin-top: 4px;
+    margin-left: 4px;
+  }
+}
+.breadCrumbs__container-white {
+  padding: 5px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 10px;
+  color: black;
+  a {
+    margin-top: 4px;
+    max-width: max-content;
+    color: black;
+    margin-left: 4px;
+  }
+  .breadCrumbs__container-last {
+    margin-top: 4px;
+
+    margin-left: 4px;
+  }
+}
+.breadCrumbs__container-black {
+  padding: 5px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 10px;
+  color: white;
+  a {
+    margin-top: 4px;
+    max-width: max-content;
+    color: white;
+    margin-left: 4px;
+  }
+  .breadCrumbs__container-last {
+    margin-top: 4px;
+
+    margin-left: 4px;
+  }
+}
+.breadCrumbs__container-contrast {
+  padding: 5px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 10px;
+  color: $FONT_CONTRAST;
+  a {
+    margin-top: 4px;
+    max-width: max-content;
+    color: $FONT_CONTRAST;
+    margin-left: 4px;
+  }
+  .breadCrumbs__container-last {
+    margin-top: 4px;
+    margin-left: 4px;
+  }
+}
+
+@include laptop {
+  .breadCrumbs__container {
+    font-size: 16px;
+  }
+  .breadCrumbs__container-white {
+    font-size: 16px;
+  }
+  .breadCrumbs__container-black {
+    font-size: 16px;
+  }
+  .breadCrumbs__container-contrast {
+    font-size: 16px;
+  }
+}
+
+@include tablets {
+  .breadCrumbs__container {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+  }
+  .breadCrumbs__container-white {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+  }
+  .breadCrumbs__container-black {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+  }
+  .breadCrumbs__container-contrast {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+  }
+}

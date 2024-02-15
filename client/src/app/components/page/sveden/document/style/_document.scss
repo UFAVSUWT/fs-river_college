@@ -1,0 +1,124 @@
+@import "../../../../../style/variables";
+
+.doc_navpanel{
+    span{
+        color: $LINK_COLOR;
+        border-bottom: solid 2px $LINK_COLOR;
+        margin: 5px 10px;
+        cursor: pointer;
+    }
+    span:hover{
+        border-bottom: solid 2px $RED_COLOR;
+    }
+    .is-active{
+        color: $MAIN_COLOR;
+        font-weight: 500;
+    }
+}
+.doc_item-show{
+    display: block;
+}
+.doc_item-hidden{
+    display: none;
+}
+.doc_container{
+    p{
+        text-transform: uppercase;
+    }
+}
+.doc__item{
+    max-width: fit-content;
+    margin: 5px 0px;
+    
+}
+.document__hrLine{
+    -webkit-box-shadow: 0px 0px 16px 2px rgba(34, 60, 80, 0.28);
+    -moz-box-shadow: 0px 0px 16px 2px rgba(34, 60, 80, 0.28);
+    box-shadow: 0px 0px 16px 2px rgba(34, 60, 80, 0.28);
+}
+.btn-show{
+    width: 100%;
+    height: fit-content;
+    border: solid 1px $MAIN_COLOR;
+    border-radius: 10px;
+    background-color: inherit;
+    margin: 10px 0px;
+    padding: 0.5em;
+  
+    &-active{
+        background-color: $BACK_BTN_SHOW;
+        width: 100%;
+        height: fit-content;
+        border: solid 1px $MAIN_COLOR;
+        border-radius: 10px;
+        margin: 10px 0px;
+        padding: 0.5em;   
+       
+    }
+}
+.btn-show-white{
+    width: 100%;
+    height: 2em;
+    border: solid 1px $DISABLED_FONT_COLOR;
+    border-radius: 10px;
+    background-color: inherit;
+    margin: 10px 0px;
+    padding: 0.5em 0; 
+    
+    &-active{
+        background-color: $BACK_BLACK;
+        color: $WHITE_FONT_COLOR;
+        width: 100%;
+        height: 2em;
+        border: solid 1px $MAIN_COLOR;
+        border-radius: 10px;
+        margin: 10px 0px;
+        padding: 0.5em 0; 
+     
+    }
+}
+.btn-show-black{
+    width: 100%;
+    height: 2em;
+    border: solid 1px $BACK_WHITE;
+    color: $WHITE_FONT_COLOR;
+    border-radius: 10px;
+    background-color: inherit;
+    margin: 10px 0px;
+    padding: 0.5em 0; 
+ 
+    &-active{
+        background-color: $BACK_WHITE;
+        width: 100%;
+        height: 2em;
+        border: solid 1px $DISABLED_FONT_COLOR;
+        color: $DISABLED_FONT_COLOR;
+        border-radius: 10px;
+        margin: 10px 0px;
+        padding: 0.5em 0; 
+       
+    }
+}
+.btn-show-contrast{
+    width: 100%;
+    height: 2em;
+    border: solid 1px $FONT_CONTRAST;
+    border-radius: 10px;
+    background-color:$BACK_CONTRAST;
+    margin: 10px 0px;
+    padding: 0.5em 0; 
+   
+    &-active{
+        background-color: $BACK_BTN_SHOW;
+        width: 100%;
+        height: 2em;
+        border: solid 1px $MAIN_COLOR;
+        border-radius: 10px;
+        margin: 10px 0px;
+        padding: 0.5em 0; 
+       
+    }
+}
+@media screen and (max-width:814px) {
+    
+}

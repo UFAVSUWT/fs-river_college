@@ -1,0 +1,245 @@
+@import "../../../../style/variables";
+@import "../../../../style/mixins/response-mixins.scss";
+.education__container {
+  background-color: $BLUE;
+  color: $BLUE_FONT_COLOR;
+  min-height: 100%;
+  padding: 1em 0.5em;
+  h1,
+  h2 {
+    font-weight: 500;
+  }
+
+  &-title {
+    text-align: center;
+  }
+  &-image {
+    padding: 1em;
+  }
+  &-content {
+    h1 {
+      text-align: center;
+      padding-bottom: 1em;
+    }
+    h2 {
+      text-indent: 2em;
+      padding-bottom: 1em;
+    }
+    h3 {
+      font-style: italic;
+    }
+    p {
+      text-indent: 2em;
+      text-align: justify;
+    }
+    ul {
+      li {
+        margin-bottom: 0.5em;
+        list-style-type: "— ";
+        text-align: justify;
+      }
+      .cursive {
+        padding: 0.5em;
+        font-style: italic;
+      }
+    }
+    ol {
+      li {
+        margin-bottom: 0.5em;
+        text-align: justify;
+      }
+    }
+    a {
+      text-decoration: underline;
+      color: $MAIN_COLOR;
+      font-weight: 500;
+    }
+  }
+}
+.education__container-white {
+  background-color: $BACK_WHITE;
+  color: $DISABLED_FONT_COLOR;
+  padding: 1em 0.5em;
+  h1,
+  h2 {
+    font-weight: 500;
+  }
+
+  &-title {
+    text-align: center;
+  }
+  &-image {
+    padding: 1em;
+  }
+  &-content {
+    h1 {
+      text-align: center;
+      padding-bottom: 1em;
+    }
+    h2 {
+      text-indent: 2em;
+      padding-bottom: 1em;
+    }
+    h3 {
+      font-style: italic;
+    }
+    p {
+      text-indent: 2em;
+      text-align: justify;
+    }
+    ul {
+      li {
+        margin-bottom: 0.5em;
+        list-style-type: "— ";
+        text-align: justify;
+      }
+      .cursive {
+        padding: 0.5em;
+        font-style: italic;
+      }
+    }
+    ol {
+      li {
+        margin-bottom: 0.5em;
+        text-align: justify;
+      }
+    }
+    a {
+      text-decoration: underline;
+      color: $DISABLED_FONT_COLOR;
+      font-weight: 500;
+    }
+  }
+}
+.education__container-black {
+  background-color: $BACK_BLACK;
+  color: $WHITE_FONT_COLOR;
+  padding: 1em 0.5em;
+  h1,
+  h2 {
+    font-weight: 500;
+  }
+
+  &-title {
+    text-align: center;
+  }
+  &-image {
+    padding: 1em;
+  }
+  &-content {
+    h1 {
+      text-align: center;
+      padding-bottom: 1em;
+    }
+    h2 {
+      text-indent: 2em;
+      padding-bottom: 1em;
+    }
+    h3 {
+      font-style: italic;
+    }
+    p {
+      text-indent: 2em;
+      text-align: justify;
+    }
+    ul {
+      li {
+        margin-bottom: 0.5em;
+        list-style-type: "— ";
+        text-align: justify;
+      }
+      .cursive {
+        padding: 0.5em;
+        font-style: italic;
+      }
+    }
+    ol {
+      li {
+        margin-bottom: 0.5em;
+        text-align: justify;
+      }
+    }
+    a {
+      text-decoration: underline;
+      color: $WHITE_FONT_COLOR;
+      font-weight: 500;
+    }
+  }
+}
+.education__container-contrast {
+  background-color: $BACK_CONTRAST;
+  color: $FONT_CONTRAST;
+  padding: 1em 0.5em;
+  h1,
+  h2 {
+    font-weight: 500;
+  }
+
+  &-title {
+    text-align: center;
+  }
+  &-image {
+    padding: 1em;
+  }
+  &-content {
+    h1 {
+      text-align: center;
+      padding-bottom: 1em;
+    }
+    h2 {
+      text-indent: 2em;
+      padding-bottom: 1em;
+    }
+    h3 {
+      font-style: italic;
+    }
+    p {
+      text-indent: 2em;
+      text-align: justify;
+    }
+    ul {
+      li {
+        margin-bottom: 0.5em;
+        list-style-type: "— ";
+        text-align: justify;
+      }
+      .cursive {
+        padding: 0.5em;
+        font-style: italic;
+      }
+    }
+    ol {
+      li {
+        margin-bottom: 0.5em;
+        text-align: justify;
+      }
+    }
+    a {
+      text-decoration: underline;
+      color: $FONT_CONTRAST;
+      font-weight: 500;
+    }
+  }
+}
+.education__link {
+  color: $MAIN_COLOR;
+}
+.education__link-white {
+  color: $DISABLED_FONT_COLOR !important;
+}
+.education__link-black {
+  color: $WHITE_FONT_COLOR !important;
+}
+.education__link-contrast {
+  color: $FONT_CONTRAST !important;
+}
+
+@include tablets {
+  .education__container {
+    font-size: 0.8rem;
+    padding: 0.5em 0.3em;
+    &-image {
+      padding: 0.3em;
+    }
+  }
+}

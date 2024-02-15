@@ -1,0 +1,244 @@
+@import "../../../../../style/variables";
+.common__container {
+  max-width: 930px;
+  /*     font-size: 1rem; */
+  text-align: justify;
+  &-title {
+    text-align: center;
+  }
+  table {
+    tbody tr:nth-child(odd) {
+      background: #fff;
+    }
+
+    /* Четные строки */
+    tbody tr:nth-child(even) {
+      background: #f7f7f7;
+    }
+    a {
+      /*  font-size: 0.8rem; */
+      color: $MAIN_COLOR;
+      border-bottom: solid 1px $MAIN_COLOR;
+      font-weight: 500;
+      &:hover {
+        color: $MAIN_COLOR;
+        border-bottom: none;
+        text-decoration: none;
+      }
+    }
+  }
+  ul {
+    padding-left: 10px;
+    li {
+      line-height: 1.2rem;
+      margin-top: 0.5em;
+
+      a {
+        margin-left: 0.5em;
+        color: $MAIN_COLOR;
+        border-bottom: solid 1px $MAIN_COLOR;
+        font-weight: 500;
+        &:hover {
+          color: $MAIN_COLOR;
+          border-bottom: none;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  ol {
+    padding-left: 10px;
+    li {
+      line-height: 1.2rem;
+      margin-top: 0.5em;
+
+      a {
+        margin-left: 0.5em;
+        color: $MAIN_COLOR;
+        border-bottom: solid 1px $MAIN_COLOR;
+        font-weight: 500;
+        &:hover {
+          color: $MAIN_COLOR;
+          border-bottom: none;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  p {
+    text-indent: 2em;
+  }
+  tr {
+    border-bottom: solid 1px $SVEDEN_BORDER-COLOR;
+  }
+  td {
+    padding: 20px;
+    text-align: left;
+    min-width: 90px;
+  }
+}
+
+.common__container-white {
+  color: $DISABLED_FONT_COLOR;
+  background-color: $BACK_WHITE;
+  /*     font-size: 1rem; */
+  &-title {
+    text-align: center;
+  }
+  p {
+    text-indent: 2em;
+  }
+  tr {
+    border-bottom: solid 1px $DISABLED_FONT_COLOR;
+  }
+  td {
+    padding: 20px;
+    text-align: left;
+    min-width: 90px;
+  }
+}
+.common__container-black {
+  color: $WHITE_FONT_COLOR;
+  background-color: $BACK_BLACK;
+  /* font-size: 1rem; */
+  &-title {
+    text-align: center;
+  }
+  p {
+    text-indent: 2em;
+  }
+  tr {
+    border-bottom: solid 1px $WHITE_FONT_COLOR;
+  }
+  td {
+    padding: 20px;
+    text-align: left;
+    min-width: 90px;
+  }
+}
+.common__container-contrast {
+  color: $FONT_CONTRAST;
+  background-color: $BACK_CONTRAST;
+  /*     font-size: 1rem; */
+  &-title {
+    text-align: center;
+  }
+  p {
+    text-indent: 2em;
+  }
+  tr {
+    border-bottom: solid 1px $FONT_CONTRAST;
+  }
+  td {
+    padding: 20px;
+    text-align: left;
+    min-width: 90px;
+  }
+}
+.common__item {
+  margin-bottom: 15px;
+  &-header {
+    padding: 1em;
+  }
+  &-body {
+    padding: 1em;
+  }
+}
+.fullSizeTable {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  height: 100vh;
+  width: 100vw;
+  /*   overflow-x: auto; */
+  /*  overflow-y: auto; */
+  overflow-x: scroll;
+  overflow-y: scroll;
+  background-color: white;
+}
+.fullSizeTabl-btnwrapper {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 0.2em 0;
+  cursor: pointer;
+  div {
+    padding-left: 0.2em;
+    font-style: italic;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .common__container {
+    width: 100%;
+    td {
+      padding: 5px;
+      text-align: left;
+      min-width: none;
+    }
+  }
+  .common__item {
+    margin-bottom: 0px;
+  }
+}
+@media screen and (max-width: 715px) {
+  .common__container {
+    /*    font-size: 0.7rem; */
+    table {
+      /*    font-size: 0.6rem; */
+      td {
+        text-align: left;
+        min-width: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 623px) {
+  .common__container {
+    h1,
+    h3,
+    p {
+      /*     font-size: 0.8rem; */
+    }
+  }
+  .common__scrollTable {
+    padding: 0.5em;
+    border-top-left-radius: 0.5em;
+    border-left: solid 1px rgba(12, 29, 44, 0.139);
+    border-top: solid 1px rgba(12, 29, 44, 0.139);
+    width: 500px;
+    overflow-x: scroll;
+    margin: 0 auto;
+
+    table {
+      width: 623px;
+      td {
+        width: 220px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .common__scrollTable {
+    width: 400px;
+    table {
+      width: 623px;
+      td {
+        width: 180px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .common__scrollTable {
+    width: 280px;
+    table {
+      width: 623px;
+      td {
+        width: 140px;
+      }
+    }
+  }
+}

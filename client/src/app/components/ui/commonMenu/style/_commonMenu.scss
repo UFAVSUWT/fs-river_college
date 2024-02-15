@@ -1,0 +1,222 @@
+@import "../../../../style/variables";
+.common__menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 300px;
+    height: max-content;
+    margin: 1em 0;
+    border-radius: 1em;
+    -webkit-box-shadow:2px 1px 5px 1px rgba(12, 29, 44, 0.139);
+    -moz-box-shadow: 2px 1px 5px 1px rgba(12, 29, 44, 0.139);
+    box-shadow: 2px 1px 5px 1px rgba(12, 29, 44, 0.139);
+    ul{
+        padding: 1em;
+        li {
+           
+            margin: 10px 0;
+            a{
+                color: $LINK_COLOR;
+                margin: 10px 0px;
+                &:hover {
+                    border-bottom: solid 1px $MAIN_COLOR;
+                    color: $ACTIV_LINK_COLOR;
+                }
+            }
+        }
+    }
+    &-title {
+        font-size: 1.1rem;
+        border-bottom: 1px solid $LINK_COLOR;
+        max-width: fit-content;
+    }
+    &-active{
+        border-bottom: solid 1px $MAIN_COLOR;
+        color: $ACTIV_LINK_COLOR;
+        &:hover{
+            color: $ACTIV_LINK_COLOR;
+        }
+    }
+}
+.common__menu-white {
+    display: block;
+    width: 280px;
+    font-size: 0.8rem;
+    margin: 20px 10px;
+    padding: 10px;
+    border: solid 1px  $BACK_BLACK;
+    ul{
+        padding: 1em;
+        li {
+           
+            margin: 10px 0;
+            a{
+                color: $DISABLED_FONT_COLOR;
+                margin: 10px 0px;
+                &:hover {
+                    border-bottom: solid 1px $DISABLED_FONT_COLOR;
+                    color: $DISABLED_FONT_COLOR;
+                };
+            }
+        }
+    }
+    &-title {
+        font-size: 1.1rem;
+        border-bottom: 1px solid $DISABLED_FONT_COLOR;
+        max-width: fit-content;
+    }
+    &-active{
+        border-bottom: solid 1px $DISABLED_FONT_COLOR;
+        color: $DISABLED_FONT_COLOR;
+        &:hover {
+            border-bottom: solid 1px $DISABLED_FONT_COLOR;
+            color: $DISABLED_FONT_COLOR;
+        }
+    }
+}
+.common__menu-black {
+    display: block;
+    width: 280px;
+    font-size: 0.8rem;
+    margin: 20px 10px;
+    padding: 10px;
+    border:solid 1px $WHITE_FONT_COLOR;
+    ul{
+        padding: 1em;
+        li {
+           
+            margin: 10px 0;
+            a{
+                color: $WHITE_FONT_COLOR;
+                margin: 10px 0px;
+                &:hover {
+                    border-bottom: solid 1px $WHITE_FONT_COLOR;
+                    color: $WHITE_FONT_COLOR;
+                };
+            }
+        }
+    }
+    &-title {
+        font-size: 1.1rem;
+        border-bottom: 1px solid  $WHITE_FONT_COLOR;
+        max-width: fit-content;
+    }
+    &-active{
+        border-bottom: solid 1px  $WHITE_FONT_COLOR;
+        color:  $WHITE_FONT_COLOR;
+        &:hover {
+            border-bottom: solid 1px  $WHITE_FONT_COLOR;
+            color: $WHITE_FONT_COLOR;
+        }
+    }
+}
+.common__menu-contrast {
+    display: block;
+    width: 280px;
+    font-size: 0.8rem;
+    margin: 20px 10px;
+    padding: 10px;
+    border:solid 1px  $FONT_CONTRAST;
+    ul{
+        padding: 1em;
+        li {
+           
+            margin: 10px 0;
+            a{
+                color:  $FONT_CONTRAST;
+                margin: 10px 0px;
+                &:hover {
+                    border-bottom: solid 1px  $FONT_CONTRAST;
+                    color:  $FONT_CONTRAST;
+                };
+            }
+        }
+    }
+    &-title {
+        font-size: 1.1rem;
+        border-bottom: 1px solid  $FONT_CONTRAST;
+        max-width: fit-content;
+    }
+    &-active{
+        border-bottom: solid 1px  $FONT_CONTRAST;
+        color:   $FONT_CONTRAST;
+        &:hover {
+            border-bottom: solid 1px  $FONT_CONTRAST;
+            color: $FONT_CONTRAST;
+        }
+    }
+}
+
+@media screen and (max-width:1300px){
+    .common__menu{
+       width: 930px;
+        ul{
+            columns: 3;
+        }
+    }
+    .common__menu-white{
+        width: 930px;
+         ul{
+             columns: 3;
+         }
+     }
+     .common__menu-black{
+        width: 930px;
+         ul{
+             columns: 3;
+         }
+     }
+     .common__menu-contrast{
+        width: 930px;
+         ul{
+             columns: 3;
+         }
+     }
+}
+@include tablets{
+    .common__menu{
+         ul{
+             columns: 2;
+         }
+     }
+     .common__menu-white{
+       
+         ul{
+             columns: 2;
+         }
+     }
+     .common__menu-black{
+    
+         ul{
+             columns: 2;
+         }
+     }
+     .common__menu-contrast{
+
+         ul{
+             columns: 2;
+         }
+     }
+}
+@include phones{
+    .common__menu{
+         ul{
+             columns: 1;
+         }
+     }
+     .common__menu-white{
+         ul{
+             columns: 1;
+         }
+     }
+     .common__menu-black{
+         ul{
+             columns: 1;
+         }
+     }
+     .common__menu-contrast{
+         ul{
+             columns: 1;
+         }
+     }
+}

@@ -1,0 +1,45 @@
+@import "../../../../style/variables";
+.schedule__container {
+  position: static;
+  z-index: 11;
+  width: 100%;
+  background-color: $MENU_COLOR;
+  color: white;
+  .date {
+    width: 180px;
+    text-align: center;
+    /*   padding: 0.5em 1em; */
+  }
+}
+.schedule__wrapper {
+  max-width: 900px;
+  margin: 0px auto; /*выравнивает контейнер по середине (для ограниченных по ширине блоков)*/
+  box-sizing: content-box;
+  padding: 15px;
+  &-btn-container {
+    display: flex;
+    justify-content: space-between;
+    button {
+      background-color: $MENU_COLOR;
+      color: white;
+      border: solid 2px white;
+      border-radius: 0.5em;
+      padding: 0.5em 1em;
+    }
+  }
+  ul {
+    margin: 20px 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    li {
+      width: 200px;
+      margin: 10px;
+    }
+  }
+}
+.schedule_btn {
+  background-color: white !important;
+  color: $MAIN_COLOR !important;
+}

@@ -1,0 +1,49 @@
+@import "../../../../style/variables";
+.workProgramm__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    h1, h2 {
+        font-weight: bold;
+        margin-bottom: 0.5em;
+    }
+  
+    table {
+        width: 100%;
+        font-size: 1rem;
+        margin-bottom: 0.5em;
+        thead{
+            th{
+                min-width: 70px;
+                margin: 0.4em 0;
+            }
+        }
+        tbody{
+           text-align: left; 
+            td:first-child{
+                text-align: center;
+            }
+            td:last-child{
+                text-align: center;
+            }
+            td{
+                min-width: 70px;
+                padding: 0.4em 0;
+            }
+            tr:nth-child(even){
+                background-color: #e5eef3af;
+            }
+        }
+        a{
+            margin-left: 0.4em;
+            color: $LINK_COLOR;
+            
+        }
+        a:hover{
+            border-bottom: solid 1px $LINK_COLOR;
+        }
+       
+     
+    }
+}

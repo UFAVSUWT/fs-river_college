@@ -1,0 +1,137 @@
+@import "../../../../style/variables";
+.eventCard{
+    height: 300px;
+   
+    border-radius: 10px;
+    color: $WHITE_FONT_COLOR;
+    position: relative;
+}
+
+//первая карточка
+.firstCard{
+    grid-area: firstCard;
+    background: rgb(0,25,212);
+    background: linear-gradient(90deg, rgba(0,25,212,1) 0%, rgba(119,130,214,1) 100%, rgba(167,167,214,1) 100%);
+}
+.firstCard-white{
+    grid-area: firstCard;
+    background-color: $BACK_WHITE;
+    color: $DISABLED_FONT_COLOR;
+    border: solid 1px $DISABLED_FONT_COLOR;
+}
+.firstCard-black{
+    grid-area: firstCard;
+    background-color: $BACK_BLACK;
+    color: $WHITE_FONT_COLOR;
+    border: solid 1px $WHITE_FONT_COLOR;
+}
+.firstCard-contrast{
+    grid-area: firstCard;
+    background-color: $BACK_CONTRAST;
+    color: $FONT_CONTRAST;
+    border: solid 1px $FONT_CONTRAST;
+}
+//вторая карточка
+.secondCard{
+    grid-area: secondCard;
+    background: rgb(18,147,65);
+    background: linear-gradient(90deg, rgba(18,147,65,1) 0%, rgba(81,251,37,1) 100%, rgba(177,250,207,1) 100%);
+}
+.secondCard-white{
+    grid-area: secondCard;
+    background-color: $BACK_WHITE;
+    color: $DISABLED_FONT_COLOR;
+    border: solid 1px $DISABLED_FONT_COLOR;
+}
+.secondCard-black{
+    grid-area: secondCard;
+    background-color: $BACK_BLACK;
+    color: $WHITE_FONT_COLOR;
+    border: solid 1px $WHITE_FONT_COLOR;
+}
+.secondCard-contrast{
+    grid-area: secondCard;
+    background-color: $BACK_CONTRAST;
+    color: $FONT_CONTRAST;
+    border: solid 1px $FONT_CONTRAST;
+}
+//третья карточка
+.thirdCard{
+    grid-area: thirdCard;  
+    background: rgb(18,147,139);
+    background: linear-gradient(90deg, rgba(18,147,139,1) 0%, rgba(37,251,245,1) 100%, rgba(177,250,207,1) 100%);
+}
+.thirdCard-white{
+    grid-area: thirdCard;
+    background-color: $BACK_WHITE;
+    color: $DISABLED_FONT_COLOR;
+    border: solid 1px $DISABLED_FONT_COLOR;
+}
+.thirdCard-black{
+    grid-area: thirdCard;
+    background-color: $BACK_BLACK;
+    color: $WHITE_FONT_COLOR;
+    border: solid 1px $WHITE_FONT_COLOR;
+}
+.thirdCard-contrast{
+    grid-area: thirdCard;
+    background-color: $BACK_CONTRAST;
+    color: $FONT_CONTRAST;
+    border: solid 1px $FONT_CONTRAST;
+}
+//четвертая карточка
+.fourthCard{
+    grid-area: fourthCard;
+    background: rgb(147,18,107);
+    background: linear-gradient(90deg, rgba(147,18,107,1) 0%, rgba(140,37,251,1) 100%, rgba(250,177,223,1) 100%);
+}
+.fourthCard-white{
+    grid-area: fourthCard;
+    background-color: $BACK_WHITE;
+    color: $DISABLED_FONT_COLOR;
+    border: solid 1px $DISABLED_FONT_COLOR;
+}
+.fourthCard-black{
+    grid-area: fourthCard;
+    background-color: $BACK_BLACK;
+    color: $WHITE_FONT_COLOR;
+    border: solid 1px $WHITE_FONT_COLOR;
+}
+.fourthCard-contrast{
+    grid-area: fourthCard;
+    background-color: $BACK_CONTRAST;
+    color: $FONT_CONTRAST;
+    border: solid 1px $FONT_CONTRAST;
+}
+
+.eventCard__num{
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 12px;
+    font-weight: 600;
+    margin: 20px auto 10px auto;
+    width: 60px;
+    height: 60px;
+    color: rgb(17, 78, 158);
+    background-color: white;
+}
+
+.eventCard__month{
+    margin: auto;
+    width: 100px;
+    text-align: center;
+}
+.eventCard__title{
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 40px 0 10px 0;
+    padding: 0 1em;
+}
+.eventCard__more{
+    position: absolute;
+    bottom: 10px;
+    right: 30%;
+    font-size: 0.8rem;
+    
+}

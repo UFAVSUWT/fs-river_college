@@ -1,0 +1,151 @@
+@import "../../../../style/variables";
+@import "../../../../style/mixins/response-mixins.scss";
+
+.news__navbar ul {
+  flex-wrap: wrap;
+  display: flex;
+  padding: 0px 1em;
+}
+.navbar__button {
+  cursor: pointer;
+  font-weight: 500;
+  margin: 5px 20px;
+  color: $LINK_COLOR;
+}
+.navbar__button-active {
+  cursor: pointer;
+  margin: 5px 20px;
+  font-weight: 500;
+  color: $ACTIV_LINK_COLOR;
+  border-bottom: solid 2px $ACTIV_LINK_COLOR;
+  padding-bottom: 5px;
+}
+.navbar__button-black {
+  cursor: pointer;
+  font-weight: 500;
+  margin: 5px 20px;
+  color: white;
+}
+.navbar__button-active-black {
+  cursor: pointer;
+  margin: 5px 20px;
+  font-weight: 500;
+  color: white;
+  border-bottom: solid 2px white;
+  padding-bottom: 5px;
+}
+.navbar__button-contrast {
+  cursor: pointer;
+  font-weight: 500;
+  margin: 5px 20px;
+  color: $FONT_CONTRAST;
+}
+.navbar__button-active-contrast {
+  cursor: pointer;
+  margin: 5px 20px;
+  font-weight: 500;
+  color: $FONT_CONTRAST;
+  border-bottom: solid 2px $FONT_CONTRAST;
+  padding-bottom: 5px;
+}
+
+@media screen and (max-width: 807px) {
+  .news__navbar {
+    display: flex;
+    justify-content: center;
+
+    ul {
+      font-size: 1rem;
+      padding: 0px;
+    }
+  }
+}
+@include phones {
+  .news__navbar {
+    ul {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+/* .news__navbar ul{
+    flex-wrap: wrap;
+    display: flex;
+    padding: 0px 1em;
+}
+.navbar__button{
+    margin: 20px 20px;
+    &-active{
+        color: $ACTIV_LINK_COLOR;
+        border-bottom: solid 2px $MAIN_COLOR;
+    }
+     a{
+        color: $LINK_COLOR;
+        font-weight: 500;
+        :hover{
+            color: $ACTIV_LINK_COLOR;
+            border-bottom: solid 2px $MAIN_COLOR;
+        }
+    }
+}
+
+.navbar__button-white{ 
+    margin: 20px 20px;
+    &-active{
+        color: $DISABLED_FONT_COLOR;
+        border-bottom: solid 2px $DISABLED_FONT_COLOR;
+    }
+    a{
+    color: $DISABLED_FONT_COLOR;
+    font-weight: 500;
+    :hover{
+        color: $ACTIV_LINK_COLOR;
+        border-bottom: solid 2px $MAIN_COLOR;
+    }
+
+}}
+.navbar__button-black {
+    &-active{
+        color: $WHITE_FONT_COLOR;
+        border-bottom: solid 2px $WHITE_FONT_COLOR;
+    }
+    margin: 20px 20px;
+    a{
+    color: $WHITE_FONT_COLOR;
+    font-weight: 500;
+    :hover{
+        color: $WHITE_FONT_COLOR;
+        border-bottom: solid 2px $WHITE_FONT_COLOR;
+    }
+}}
+.navbar__button-contrast {
+    &-active{
+        color: $FONT_CONTRAST;
+        border-bottom: solid 2px $FONT_CONTRAST;
+    }
+    margin: 20px 20px;
+    a{
+    color: $FONT_CONTRAST;
+    font-weight: 500;
+    :hover{
+        color: $FONT_CONTRAST;
+        border-bottom: solid 2px $FONT_CONTRAST;
+    }
+}}
+@media screen and (max-width:807px){
+    .news__navbar {
+        display: flex;
+        justify-content: center;
+
+        ul{
+        font-size: 1rem;
+        padding: 0px;
+    }}
+}
+@include phones {
+    .news__navbar {
+        ul{
+        font-size: 0.8rem;
+    }}
+}
+ */

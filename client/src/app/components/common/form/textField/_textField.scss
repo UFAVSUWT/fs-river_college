@@ -1,0 +1,17 @@
+.textfield{
+    div{
+        div{
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            div{
+                height: 40px;
+                border-bottom: solid 1px white;
+                margin-bottom: 10px;
+                button{
+                        background-color: inherit;  
+                }
+            }
+        }
+    }
+}

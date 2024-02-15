@@ -1,0 +1,40 @@
+@import "../../../../style/variables";
+.liveCards{
+    padding: 40px 0px;
+    display: grid;   
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 90px);
+    grid-template-areas: 
+    "liveCardOne liveCardTwo liveCardThree"
+    "liveCardFour liveCardFive liveCardSix";
+}
+@include laptop {
+    .liveCards{
+        padding: 20px 0px;
+        gap: 15px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 90px);
+        grid-template-areas: 
+        "liveCardOne liveCardTwo"
+        "liveCardThree liveCardFour"
+        "liveCardFive liveCardSix";
+        
+    }
+}
+@include phones{
+    .liveCards{
+        padding: 20px 0px;
+        display: grid;
+        gap: 15px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 90px);
+        grid-template-areas: 
+        "liveCardOne"
+        "liveCardTwo"
+        "liveCardThree"
+        "liveCardFour"
+        "liveCardFive"
+        "liveCardSix";
+    }
+}

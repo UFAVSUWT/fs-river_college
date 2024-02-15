@@ -1,0 +1,122 @@
+@import "../../../../style/variables";
+
+.partners{
+
+    padding-bottom: 20px;
+    color: $MAIN_COLOR;
+    h3{ 
+        font-weight: 500;
+        width: max-content;
+        border-bottom: solid 2px $MAIN_COLOR;
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+    }
+    &_container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        &-item{
+            margin: 10 auto;
+            width: 200px;
+            text-align: center;
+            h4{
+                color: $MAIN_COLOR;
+            }
+            img{
+                margin-bottom: 10px;
+                filter: grayscale(1);
+            }
+        }
+        &-item:hover{
+            cursor: pointer;
+            img{
+                filter: grayscale(0);
+            }
+            h4{
+                color: $RED_COLOR;
+            }
+            
+        }
+    }
+}
+.partners-white{
+    color: black;
+    h3{ 
+        border-bottom: solid 2px black;
+    }
+    .partners_container{
+        a{
+            .partners_container-item{
+                h4{
+                    color: black;
+                }
+                img{
+                    filter: grayscale(1);
+                }
+            }
+            .partners_container-item:hover{
+                img{
+                    filter: grayscale(1);
+                }
+                h4{
+                    color: black;
+                }
+                
+            }
+        }
+    }
+}
+.partners-black{
+    color: white;
+    h3{ 
+        border-bottom: solid 2px white;
+    }
+    .partners_container{
+        a{
+            .partners_container-item{
+                h4{
+                    color: white;
+                }
+                img{
+                    filter: grayscale(1);
+                }
+            }
+            .partners_container-item:hover{
+                img{
+                    filter: grayscale(1);
+                }
+                h4{
+                    color: white;
+                }
+                
+            }
+        }
+    }
+}
+.partners-contrast{
+    color: $FONT_CONTRAST;
+    h3{ 
+        border-bottom: solid 2px $FONT_CONTRAST;
+    }
+    .partners_container{
+        a{
+            .partners_container-item{
+                h4{
+                    color: $FONT_CONTRAST;
+                }
+                img{
+                    filter: grayscale(1);
+                }
+            }
+            .partners_container-item:hover{
+                img{
+                    filter: grayscale(1);
+                }
+                h4{
+                    color: $FONT_CONTRAST;
+                }
+                
+            }
+        }
+    }
+}

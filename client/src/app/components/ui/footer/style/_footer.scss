@@ -1,0 +1,64 @@
+@import "../../../../style/variables";
+.footer {
+  padding: 20px 0px 20px 0px;
+  background-color: $MAIN_COLOR;
+  color: $FONT_COLOR;
+  &-white {
+    padding: 20px 0px 20px 0px;
+    background-color: $BACK_WHITE;
+    color: $DISABLED_FONT_COLOR;
+    border: solid 1px $DISABLED_FONT_COLOR;
+  }
+  &-black {
+    padding: 20px 0px 20px 0px;
+    background-color: $BACK_BLACK;
+    color: $WHITE_FONT_COLOR;
+    border: solid 1px $WHITE_FONT_COLOR;
+  }
+  &-contrast {
+    padding: 20px 0px 20px 0px;
+    background-color: $BACK_CONTRAST;
+    color: $FONT_CONTRAST;
+    border: solid 1px $FONT_CONTRAST;
+  }
+}
+.footer__container {
+  padding: 20px;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "vguvt logo collegeInfo";
+}
+.footer__vguvt {
+  grid-area: vguvt;
+}
+.footer__logo {
+  grid-area: logo;
+}
+.footer__collegeInfo {
+  grid-area: collegeInfo;
+}
+
+@include laptop {
+  .footer__container {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .footer__container {
+    padding: 20px;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+      "vguvt"
+      "logo"
+      "collegeInfo";
+  }
+  .footer__vguvt {
+    text-align: center;
+    margin: 0.3em;
+  }
+}

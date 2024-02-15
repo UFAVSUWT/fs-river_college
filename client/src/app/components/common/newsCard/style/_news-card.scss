@@ -1,0 +1,44 @@
+@import "../../../../style/variables";
+.newsCard-wrapper {
+  background-color: gray;
+  height: max-content;
+  width: 300px;
+  margin: 20px;
+  .imageContainer {
+    position: relative;
+    height: 300px;
+    img {
+      position: absolute;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+    .time {
+      position: absolute;
+      width: 40px;
+      height: 60px;
+      z-index: 2;
+      text-align: center;
+      color: white;
+      font-weight: 700;
+      padding: 5px;
+      background-color: #83d9b8;
+    }
+  }
+  a {
+    .titleContainer {
+      cursor: pointer;
+      background-color: white;
+      font-weight: bold;
+      font-size: 18px;
+      text-align: center;
+      padding: 25px 10px;
+      min-height: 70px;
+      display: flex;
+      justify-content: space-between;
+      vertical-align: middle;
+
+      color: $MAIN_COLOR;
+    }
+  }
+}

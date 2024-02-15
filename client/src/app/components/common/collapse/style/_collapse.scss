@@ -1,0 +1,25 @@
+@import "../../../../style/variables";
+.collapse_wrapper{
+    background-color: #FAFAFA;
+    color: $MAIN_COLOR;
+}
+.collapse_wrapper-header{
+    padding: 10px;
+    border: solid 1px $LINK_COLOR;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.collapse_wrapper-content{
+    max-height: 0;
+    overflow: hidden;
+
+    transition: max-height 200ms ease-in-out;
+  }
+.collapse_wrapper-isShow{
+    max-height:1000px;
+    border: solid 1px $LINK_COLOR;
+    border-top: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: max-height 200ms ease-in-out;
+}

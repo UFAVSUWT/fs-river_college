@@ -1,0 +1,62 @@
+@import "../../../../../style/variables";
+
+.calendarGrid__wrapper{
+    display: grid;
+    background-color: white;
+    color: black;
+    width: 100%;
+    grid-template-columns: repeat(7,1fr);
+}
+.calendarCell-header{
+    color: black;
+    max-height: 34.28px;
+    max-width: 60px;
+    min-height: 28.57px;
+    min-width: 50px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+div .calendarCellIsSelected{
+    background-color: rgba(229, 187, 181, 0.626) ;
+}
+.calendarCell{
+    max-height: 34.28px;
+    max-width: 60px;
+    min-height: 28.57px;
+    min-width: 50px;
+    outline: 1px solid white;
+    padding: 1px;
+    &-row{
+        display: flex;
+        justify-content: flex-end;
+    }
+    &-day{
+        height: 33px;
+        width:  33px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1px;
+        &-currentDay{
+           color: #78866b;
+           font-weight: 700;
+            height: 100%;
+            width: 100%; 
+            display: flex;
+            align-items: center;
+            justify-content: center;  
+        }
+    }
+    &:hover{
+        background-color: rgba(229, 187, 181, 0.626);
+    }
+}
+.isWeekend{
+    background-color: rgb(252, 238, 235);
+    outline-color: #e0cbc7;
+}
+.isDayOfSelectedMonth{
+    color: black;
+    font-weight: 410;
+}

@@ -1,0 +1,270 @@
+.chapter__menu{
+ 
+    display: table;
+ /*    justify-content: center; */
+    width: 100%;
+    height:fit-content;
+    margin: 1em 0;
+    border-radius: 0.5em;
+    -webkit-box-shadow:2px 1px 5px 1px rgba(12, 29, 44, 0.139);
+    -moz-box-shadow: 2px 1px 5px 1px rgba(12, 29, 44, 0.139);
+    box-shadow: 2px 1px 5px 1px rgba(12, 29, 44, 0.139);
+    overflow:visible;
+    h3{
+       margin: 10px auto;
+    }
+    ul{
+        justify-content: space-around;
+        padding: 0.5em;
+       /*  columns: 3;
+        -webkit-columns: 3 ;
+        -moz-columns: 3; */
+       
+        li:before {
+            content: "";
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+        }
+        li {
+            text-align: center;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-bottom: 20px;
+            width: calc(100%/3);
+            float: left;
+            a{
+                color: $LINK_COLOR;
+    
+                &:hover {
+                    border-bottom: solid 1px $MAIN_COLOR;
+                    color: $ACTIV_LINK_COLOR;
+                }
+            }
+            
+        }
+    }
+    &-title {
+        font-size: 1.1rem;
+        border-bottom: 1px solid $LINK_COLOR;
+        max-width: fit-content;
+    }
+    &-active{
+        border-bottom: solid 1px $MAIN_COLOR;
+        color: $ACTIV_LINK_COLOR;
+        &:hover{
+            color: $ACTIV_LINK_COLOR;
+        }
+    }
+}
+.chapter__menu-white {
+    display: table;
+    width: 100%;
+    font-size: 0.8rem;
+    margin: 20px 10px;
+    padding: 10px;
+    border: solid 1px  $BACK_BLACK;
+    ul{
+        justify-content: space-around;
+        padding: 0.5em;
+        li:before {
+            content: "";
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+        }
+        li {
+            text-align: center;
+            margin-bottom: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+            width: calc(100%/3);
+            float: left;
+            a{
+                color: $DISABLED_FONT_COLOR;
+                margin: 10px 0px;
+                &:hover {
+                    border-bottom: solid 1px $DISABLED_FONT_COLOR;
+                    color: $DISABLED_FONT_COLOR;
+                };
+            }
+        }
+    }
+    &-title {
+        font-size: 1.1rem;
+        border-bottom: 1px solid $DISABLED_FONT_COLOR;
+        max-width: fit-content;
+    }
+    &-active{
+        border-bottom: solid 1px $DISABLED_FONT_COLOR;
+        color: $DISABLED_FONT_COLOR;
+        &:hover {
+            border-bottom: solid 1px $DISABLED_FONT_COLOR;
+            color: $DISABLED_FONT_COLOR;
+        }
+    }
+}
+.chapter__menu-black {
+    display: table;
+    width: 100%;
+    font-size: 0.8rem;
+    margin: 20px 10px;
+    padding: 10px;
+    border:solid 1px $WHITE_FONT_COLOR;
+    ul{
+        justify-content: space-around;
+        padding: 0.5em;
+        li:before {
+            content: "";
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+        }
+        li {
+            padding-left: 10px;
+            padding-right: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+            width: calc(100%/3);
+            float: left;
+            a{
+                color: $WHITE_FONT_COLOR;
+                margin: 10px 0px;
+                &:hover {
+                    border-bottom: solid 1px $WHITE_FONT_COLOR;
+                    color: $WHITE_FONT_COLOR;
+                };
+            }
+        }
+    }
+    &-title {
+        font-size: 1.1rem;
+        border-bottom: 1px solid  $WHITE_FONT_COLOR;
+        max-width: fit-content;
+    }
+    &-active{
+        border-bottom: solid 1px  $WHITE_FONT_COLOR;
+        color:  $WHITE_FONT_COLOR;
+        &:hover {
+            border-bottom: solid 1px  $WHITE_FONT_COLOR;
+            color: $WHITE_FONT_COLOR;
+        }
+    }
+}
+.chapter__menu-contrast {
+    display: table;
+    width: 100%;
+    font-size: 0.8rem;
+    margin: 20px 10px;
+    padding: 10px;
+    border:solid 1px  $FONT_CONTRAST;
+    ul{
+        justify-content: space-around;
+        padding: 0.5em;
+        li:before {
+            content: "";
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+        }
+        li {
+            padding-left: 10px;
+            padding-right: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+            width: calc(100%/3);
+            float: left;
+            a{
+                color:  $FONT_CONTRAST;
+                margin: 10px 0px;
+                &:hover {
+                    border-bottom: solid 1px  $FONT_CONTRAST;
+                    color:  $FONT_CONTRAST;
+                };
+            }
+        }
+    }
+    &-title {
+        font-size: 1.1rem;
+        border-bottom: 1px solid  $FONT_CONTRAST;
+        max-width: fit-content;
+    }
+    &-active{
+        border-bottom: solid 1px  $FONT_CONTRAST;
+        color:   $FONT_CONTRAST;
+        &:hover {
+            border-bottom: solid 1px  $FONT_CONTRAST;
+            color: $FONT_CONTRAST;
+        }
+    }
+}
+
+@media screen and (max-width:1150px){
+    .chapter__menu{
+        ul{
+           li{
+               width: calc(100%/2);
+           } 
+        }
+    }
+    .chapter__menu-white{
+        ul{
+            li{
+                width: calc(100%/2);
+            }
+         }
+    }
+    .chapter__menu-black{
+        ul{
+            li{
+                width: calc(100%/2);
+            } 
+         }
+    }
+    .chapter__menu-contrast{
+        ul{
+            li{
+                width: calc(100%/2);
+            }
+         }
+    }
+}
+@media screen and (max-width:600px){
+    .chapter__menu{
+        ul{
+           li{
+               width: 100%;
+           } 
+        }
+    }
+    .chapter__menu-white{
+        ul{
+            li{
+                width: 100%;
+            }
+         }
+    }
+    .chapter__menu-black{
+        ul{
+            li{
+                width: 100%;
+            } 
+         }
+    }
+    .chapter__menu-contrast{
+        ul{
+            li{
+                width: 100%;
+            }
+         }
+    }
+}
+
+.chapter__menu-show{
+    display: none;
+}
+@media screen and (max-width:1270px){
+	.chapter__menu-show{
+        display: block;
+    }
+}

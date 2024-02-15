@@ -1,0 +1,53 @@
+.cards{
+    margin: 20px auto;
+    max-width: 1300px;
+    text-align: center;
+    /* display: flex;
+    margin: 20px auto;
+    flex-wrap: wrap;
+    justify-content: space-around; */
+}
+/* div.cards {
+    
+    text-align: center;
+    
+    max-width: 1300px;
+  }
+ */
+/* 
+.newscard__container { 
+    overflow: hidden;
+    border-radius: 20px;
+    transition: all 0.2s linear
+
+}
+ .newscard__container:hover {
+    border-radius: 20px;
+    transform: scale(1.04,1.04);
+ 
+} 
+.newscards{
+    display: grid;
+    padding: 20px 0px;
+    gap: 20px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(11, 130px);
+    grid-template-areas: 
+    "cardOne   cardOne   cardOne   cardOne   cardOne   cardOne   cardTwo   cardTwo   cardTwo   cardTwo   cardTwo   cardTwo"
+    "cardOne   cardOne   cardOne   cardOne   cardOne   cardOne   cardTwo   cardTwo   cardTwo   cardTwo   cardTwo   cardTwo"
+    "cardOne   cardOne   cardOne   cardOne   cardOne   cardOne   cardTwo   cardTwo   cardTwo   cardTwo   cardTwo   cardTwo"
+    "cardOne   cardOne   cardOne   cardOne   cardOne   cardOne   cardFive  cardFive  cardFive  cardFive  cardFive  cardFive "
+    "cardOne   cardOne   cardOne   cardOne   cardOne   cardOne   cardFive  cardFive  cardFive  cardFive  cardFive  cardFive "
+    "cardThree cardThree cardThree cardFour  cardFour  cardFour  cardFive  cardFive  cardFive  cardFive  cardFive  cardFive "
+    "cardThree cardThree cardThree cardFour  cardFour  cardFour  cardSix   cardSix   cardSix   cardSix   cardSix   cardSix"
+    "cardThree cardThree cardThree cardFour  cardFour  cardFour  cardSix   cardSix   cardSix   cardSix   cardSix   cardSix"
+    "cardSeven cardSeven cardSeven cardSeven cardSeven cardSeven cardSeven cardEight cardEight cardEight  cardEight  cardEight"
+    "cardSeven cardSeven cardSeven cardSeven cardSeven cardSeven cardSeven cardEight cardEight cardEight  cardEight  cardEight"
+    "cardSeven cardSeven cardSeven cardSeven cardSeven cardSeven cardSeven cardEight cardEight cardEight  cardEight  cardEight"; 
+}
+@media screen and (max-width:1300px){
+    .newscards{
+        display: none;
+    }
+}
+ */
